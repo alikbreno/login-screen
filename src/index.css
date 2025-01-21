@@ -46,26 +46,32 @@ body{
     border: white;
 }
 .forgot{
-    text-align: right;
-    font-size: 0.9rem;
-    padding-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
 }
 .forgot a{
     color: #e9f035;
     text-decoration-line: none;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    text-align: end;
+    width: 100%;
 }
 .forgot a:hover{
     text-decoration-line: underline;
 }
 .button{
-    text-decoration-line: none;
     color: white;
     background-color: #e9f035;
     width: 100%;
     text-align: center;
+    font-size: 1rem;
     padding: 0.8rem;
     border-radius: 15px;
     margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
 }
 .button:hover{
     background-color: rgb(223, 230, 53);
@@ -76,4 +82,17 @@ body{
 }
 .sign_up a{
     color: #e9f035;
+}
+.button:disabled{
+    opacity: 0.5;
+    cursor: auto;
+}
+.button:disabled:hover{
+    background-color: #e9f035;
+}
+.errorMessage{
+    color: red;
+    font-size: 12px;
+    padding-top: 0.2rem;
+    width: 27rem;
 }
